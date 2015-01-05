@@ -53,7 +53,7 @@
           account today.</p>
           <p class="button-group radius">
           <a class="button success" href="#">Download the app</a>
-          <a class="button hide-for-small">Text me the link</a>
+          <a class="button hide-for-small" data-reveal-id="formModal">Text me the link</a>
           </p>
         </div>
         <div>
@@ -106,7 +106,7 @@
         other users that will be deleted once viewed.</p>
         <div>
           <div class="large-6 push-6 columns">
-            <img class="th radius" src="img/thumb.jpg">
+            <img class="th radius" data-reveal-id="vidModal" src="img/thumb.jpg">
           </div>
           <div class="large-6 pull-6 columns">
             <p><em>Get access to these courses for only $24 a month!</em></p>
@@ -134,6 +134,33 @@
       </div>
     </div>
     <!-- End Page Footer -->
+
+    <!-- Form Modal -->
+    <div id="formModal" class="reveal-modal small">
+     <h3>We'll text you the link!</h3>
+     <a href="#" class="close-reveal-modal">&#215;</a>
+     <form class="custom">
+       <fieldset>
+        <input type="tel" placeholder="Mobile Phone">
+        <select>
+          <option>iOS</option>
+          <option>Android</option>
+        </select>
+        <button type="submit" class="small button">Text Me!</button>
+       </fieldset>
+     </form>
+    </div>
+    <!-- End Form Modal -->
+
+    <!-- Video Modal -->
+    <div id="vidModal" class="reveal-modal">
+      <div class="flex-video widescreen">
+        <iframe width="420" height="315" src="http://www.youtube.com/embed/hTf0CgRC1_Q" frameborder="0"
+          allowfullscreen></iframe>
+      </div>
+      <a href="#" class="close-reveal-modal">&#215;</a>
+    </div>
+    <!-- End Video Modal -->
 
     <script>
 document.write('<script src=' +
